@@ -4,7 +4,7 @@ import Buyable from '../interface';
 
 test ('testing cart-adding', () => {
     const cart = new Cart();
-    const movie = new Movie(25, 'Мстители', 2012, 'США', 'Slogan', 'фантастика, боевик, фентези', 137, 45);
+    const movie = new Movie(25, 'Мстители','The Avengers', 2012, 'USA', 'Avengers Assemble!', ['fantasy', 'action', 'adventure'], 97, 1000);
     cart.add(movie);
     expect(cart.items.length).toBe(1);
 })
